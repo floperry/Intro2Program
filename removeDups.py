@@ -5,7 +5,7 @@
 def removeDups(L1, L2):
     """假定L1和L2是列表，
        删除L1中出现在L2中的元素"""
-    for e1 in L1:
+    for e1 in L1[:]:
         if e1 in L2:
             L1.remove(e1)
 
